@@ -1,0 +1,69 @@
+[submodule ".vim/bundle/fugitive"]
+	path = .vim/bundle/fugitive
+	url = http://github.com/tpope/vim-fugitive.git
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = http://github.com/scrooloose/nerdtree.git
+[submodule ".vim/bundle/yankring"]
+	path = .vim/bundle/yankring
+	url = http://github.com/vim-scripts/YankRing.vim.git
+[submodule ".vim/bundle/nerdcommenter"]
+	path = .vim/bundle/nerdcommenter
+	url = http://github.com/scrooloose/nerdcommenter.git
+[submodule ".vim/bundle/surround"]
+	path = .vim/bundle/surround
+	url = http://github.com/tpope/vim-surround.git
+[submodule ".vim/bundle/tcomment"]
+	path = .vim/bundle/tcomment
+	url = http://github.com/vim-scripts/tComment.git
+[submodule ".vim/bundle/conque"]
+	path = .vim/bundle/conque
+	url = http://github.com/vim-scripts/Conque-Shell.git
+[submodule ".vim/bundle/ack"]
+	path = .vim/bundle/ack
+	url = http://github.com/mileszs/ack.vim.git
+[submodule ".vim/bundle/supertab"]
+	path = .vim/bundle/supertab
+	url = http://github.com/ervandew/supertab.git
+[submodule ".vim/bundle/gundo"]
+	path = .vim/bundle/gundo
+	url = http://github.com/sjl/gundo.vim.git
+[submodule ".vim/bundle/extradite"]
+	path = .vim/bundle/extradite
+	url = http://github.com/int3/vim-extradite.git
+[submodule ".vim/bundle/gitv"]
+	path = .vim/bundle/gitv
+	url = http://github.com/gregsexton/gitv.git
+[submodule ".vim/bundle/alternate"]
+	path = .vim/bundle/alternate
+	url = http://github.com/vim-scripts/a.vim.git
+[submodule ".vim/bundle/d"]
+	path = .vim/bundle/d
+	url = http://github.com/vim-scripts/d.vim.git
+[submodule ".vim/bundle/background-make"]
+	path = .vim/bundle/background-make
+	url = http://github.com/gfxmonk/vim-background-make.git
+[submodule ".vim/bundle/fuzzyfinder"]
+	path = .vim/bundle/fuzzyfinder
+	url = http://github.com/vim-scripts/FuzzyFinder.git
+[submodule ".vim/bundle/l9"]
+	path = .vim/bundle/l9
+	url = http://github.com/vim-scripts/L9.git
+[submodule ".vim/bundle/gnupg"]
+	path = .vim/bundle/gnupg
+	url = http://github.com/vim-scripts/gnupg.git
+[submodule ".vim/bundle/patchreview"]
+	path = .vim/bundle/patchreview
+	url = http://github.com/junkblocker/patchreview-vim.git
+[submodule ".vim/bundle/taglist"]
+	path = .vim/bundle/taglist
+	url = http://github.com/vim-scripts/taglist.vim.git
+[submodule ".vim/bundle/trailing-whitespace"]
+	path = .vim/bundle/trailing-whitespace
+	url = http://github.com/vim-scripts/trailing-whitespace.git
+[submodule ".vim/bundle/autocomplpop"]
+	path = .vim/bundle/autocomplpop
+	url = http://github.com/vim-scripts/AutoComplPop.git
+[submodule ".vim/bundle/fsharp"]
+	path = .vim/bundle/fsharp
+	url = http://github.com/DrTom/fsharp-vim.git

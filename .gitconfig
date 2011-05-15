@@ -1,0 +1,25 @@
+[user]
+    name = Adrien Chauve
+    email = adrien.chauve@gmail.com
+[core]
+    editor = vim
+[rerere]
+    enabled = true
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    cp = cherry-pick
+    last = log -1 HEAD
+    lol = log --graph --pretty=short -n
+    all = log --graph --pretty=short --decorate --all -n
+    all10 = log --graph --pretty=short --decorate --all -n 10
+    glog = log --pretty=oneline --topo-order --graph --abbrev-commit --all --decorate -n
+    root = !pwd
+[color]
+    ui = true
+[gui]
+    spellingdictionary = en_GB
+[diff]
+    ignoreSubmodules = untracked

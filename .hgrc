@@ -1,0 +1,66 @@
+[ui]
+username= Adrien Chauve <adrien.chauve@gmail.com>
+merge = vimdiff
+logtemplate = "{node|short} | {date|shortdate} | {rev} | {author|user} | {desc|firstline}\n"
+editor = vim
+
+[merge-tools]
+vimdiff.args=$output $other
+
+[extensions]
+color =
+mq =
+transplant =
+progress =
+graphlog =
+purge =
+rebase =
+record =
+#eol =
+extdiff=
+
+#crecord = ~/local/src/hgext/crecord/crecord
+#histedit = ~/local/src/hgext/histedit/hg_histedit.py
+#hggit = ~/local/src/hgext/hg-git/hggit
+#hgext.mercurial_keyring = ~/local/src/hgext/mercurial_keyring/mercurial_keyring.py
+#hggrep = ~/local/src/hgext/hggrep/hggrep.py
+
+#pbranch= ~/local/src/hgext/pbranch/hgext/pbranch.py
+#review = ~/local/src/hgext/review/review
+
+
+[diff]
+git = True
+ignorews = True
+
+[defaults]
+#push = -r
+
+[color]
+#status.unknown = yellow bold
+
+[bookmarks]
+track.current = True
+
+[extdiff]
+cmd.vimdiff=
+
+[alias]
+qput=qpush
+lol=glog --limit 5
+vim=vimdiff
+vi=vimdiff
+retip = qimport -n retip --rev tip
+
+#[git]
+#
+#intree = True
+
+[tortoisehg]
+authorcolor = True
+tasktabs = east
+ui.language = en
+guifork = True
+
+# [eol]
+# only-consistent = False

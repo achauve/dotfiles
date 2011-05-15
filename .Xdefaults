@@ -1,0 +1,17 @@
+!XTerm*Font:  -misc-fixed-medium-r-normal--13-120-75-75-c-80-iso10646-1
+
+XTerm*metaSendsEscape: true
+XTerm*eightBitInput: false
+
+
+XTerm*background: black
+XTerm*foreground: white
+! XTerm*pointerColor: red
+! XTerm*pointerColorBackground: black
+! XTerm*cursorColor: white
+! XTerm*internalBorder: 3
+! XTerm*loginShell: true
+! XTerm*scrollBar: false
+! XTerm*scrollKey: true
+! XTerm*saveLines: 1000
+! XTerm*multiClickTime: 250

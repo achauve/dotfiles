@@ -1,0 +1,9 @@
+.emacs.d/auto-save-list/
+.emacs.d/ac-comphist.dat
+.ropeproject
+*~
+.emacs.d/semanticdb/*
+.emacs.d/ede-projects.el
+*.elc
+anything-c-adaptive-history
+.vim/doc/tags

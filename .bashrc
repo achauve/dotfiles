@@ -10,7 +10,7 @@ fi
 
 # prompt
 if [ -f ~/battery.sh ]; then
-    batt_prompt=' [$(~/battery.sh)]]'
+    batt_prompt=' [$(~/battery.sh)]'
 else
     batt_prompt=''
 fi
@@ -61,7 +61,6 @@ export GREP_OPTIONS='--color=auto -I -n --exclude-dir=".svn" --exclude-dir=".hg"
 
 PATH=~/local/bin:~/local/src/dmd2/linux/bin64:${PATH}
 
-export PYTHONSTARTUP=~/.pystartup
 export PYTHONPATH=~/local/lib/python
 
 export BROWSER=firefox

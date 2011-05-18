@@ -373,3 +373,13 @@ let g:acp_completeOption = '.,w,b,k,t'
 
 
 map <F7> :checktime<CR>
+
+
+noremap <leader>do :set syntax=cpp.doxygen<CR>
+noremap <leader>dn :set syntax=cpp<CR>
+
+map <F10> :set paste<CR>
+map <F11> :set nopaste<CR>
+imap <F10> <C-O>:set paste<CR>
+imap <F11> <nop>
+set pastetoggle=<F11>

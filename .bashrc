@@ -94,3 +94,8 @@ if [ -f /usr/bin/keychain ]; then
     eval `keychain --eval --agents ssh id_rsa`
 fi
 
+
+if [ -f ~/.local_bashrc ]; then
+    source ~/.local_bashrc
+fi
+

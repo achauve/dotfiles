@@ -80,13 +80,6 @@ mytextclock = awful.widget.textclock({ align = "right" })
 -- Create a systray
 mysystray = widget({ type = "systray" })
 
-mybattery_textbox = widget({ type = "textbox" })
-mybattery_textbox.text = "battery"
-mytimer = timer({ timeout = 5 })
-mytimer:add_signal("timeout", function()
-                                fd = io.popen('/home/ach/awesome_battery.sh')
-                                mybattery_textbox.text = fd:read("*a") end)
-mytimer:start()
 
 -- Create a wibox for each screen and add it
 mywibox = {}
@@ -158,7 +151,6 @@ for s = 1, screen.count() do
         },
         mylayoutbox[s],
         mytextclock,
-        mybattery_textbox,
         s == 1 and mysystray or nil,
         mytasklist[s],
         layout = awful.widget.layout.horizontal.rightleft

@@ -64,6 +64,7 @@
 [submodule ".vim/bundle/autocomplpop"]
 	path = .vim/bundle/autocomplpop
 	url = http://github.com/vim-scripts/AutoComplPop.git
-[submodule ".vim/bundle/fsharp"]
-	path = .vim/bundle/fsharp
-	url = http://github.com/DrTom/fsharp-vim.git
+
+[submodule ".vim/bundle/clang_complete"]
+	path = .vim/bundle/clang_complete
+	url = http://github.com/Rip-Rip/clang_complete.git

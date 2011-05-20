@@ -81,8 +81,7 @@ set visualbell t_vb=
 
 syntax enable "Enable syntax hl
 
-" Set Fonts
-set gfn=Inconsolata:h14
+
 set shell=/bin/bash
 
 " Highlight current line
@@ -358,9 +357,9 @@ if &term =~ "xterm\\|rxvt"
     autocmd VimLeave * :!echo -ne "\033]12;red\007"
 endif
 
-" let g:clang_complete_auto=0
+let g:clang_complete_auto=0
 " " let g:clang_library_path='/usr/local/lib/'
-" let g:clang_use_library=1
+let g:clang_use_library=1
 " let g:clang_complete_copen=1
 " let g:clang_periodic_quickfix=1
 " let g:clang_snippets=1

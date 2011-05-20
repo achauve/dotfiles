@@ -54,7 +54,7 @@ alias iccsetup='source /opt/intel/bin/compilervars.sh intel64'
 
 alias suspend='sudo pm-suspend'
 
-
+alias make_tags='ctags -R --c++-kinds=+cdefgmnstuv --fields=+iaS --extra=+q --exclude=build* -f'
 
 
 export GREP_OPTIONS='--color=auto -I -n --exclude-dir=".svn" --exclude-dir=".hg"'

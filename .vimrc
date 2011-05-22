@@ -335,8 +335,7 @@ set autochdir
 
 let g:Tlist_Show_One_File=1
 
-"set tags=./.tags;,~/.vimtags
-set tags=tags;/  ",~/.vimtags
+set tags=tags;$HOME
 
 "set completeopt+=longest
 " automatically open and close the popup menu / preview window

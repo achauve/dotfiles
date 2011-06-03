@@ -20,6 +20,6 @@
 [color]
     ui = true
 [gui]
-    spellingdictionary = en_GB
+	spellingdictionary = none
 [diff]
     ignoreSubmodules = untracked

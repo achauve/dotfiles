@@ -292,7 +292,8 @@ endfunction
 
 map <F8> :call RefreshProjectTags()<CR>
 
-
+map <leader>tz :vert stselect<CR>
+map <leader>tr :tselect<CR>
 
 map <leader>tl :TlistToggle<CR>
 map <leader>to :TlistOpen<CR>
@@ -381,3 +382,6 @@ map <F11> :set nopaste<CR>
 imap <F10> <C-O>:set paste<CR>
 imap <F11> <nop>
 set pastetoggle=<F11>
+
+
+map <F4> :exe ":Ack --type=cpp " . expand("<cword>") . " " . g:project_root<CR>

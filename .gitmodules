@@ -55,9 +55,6 @@
 [submodule ".vim/bundle/patchreview"]
 	path = .vim/bundle/patchreview
 	url = http://github.com/junkblocker/patchreview-vim.git
-[submodule ".vim/bundle/taglist"]
-	path = .vim/bundle/taglist
-	url = http://github.com/vim-scripts/taglist.vim.git
 [submodule ".vim/bundle/trailing-whitespace"]
 	path = .vim/bundle/trailing-whitespace
 	url = http://github.com/vim-scripts/trailing-whitespace.git
@@ -68,3 +65,6 @@
 [submodule ".vim/bundle/clang_complete"]
 	path = .vim/bundle/clang_complete
 	url = http://github.com/Rip-Rip/clang_complete.git
+[submodule ".vim/bundle/tagbar"]
+	path = .vim/bundle/tagbar
+	url = http://github.com/majutsushi/tagbar.git

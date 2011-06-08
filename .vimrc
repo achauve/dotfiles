@@ -295,8 +295,8 @@ map <F8> :call RefreshProjectTags()<CR>
 map <leader>tz :vert stselect<CR>
 map <leader>tr :tselect<CR>
 
-map <leader>tl :TlistToggle<CR>
-map <leader>to :TlistOpen<CR>
+map <leader>tl :TagbarToggle<CR>
+map <leader>to :TagbarOpen<CR>
 
 map <leader>z :bd<CR>
 map <leader>o <C-w><C-w>

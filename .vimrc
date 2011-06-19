@@ -385,3 +385,9 @@ set pastetoggle=<F11>
 
 
 map <F4> :exe ":Ack --type=cpp " . expand("<cword>") . " " . g:project_root<CR>
+
+
+" wimwiki
+let g:vimwiki_folding=1
+let g:vimwiki_fold_lists=1
+let g:vimwiki_hl_headers=1

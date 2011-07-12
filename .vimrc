@@ -22,6 +22,9 @@ filetype indent on
 " Set to auto read when a file is changed from the outside
 set autoread
 
+set ttyfast
+set lazyredraw
+
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
 let mapleader = ","
@@ -391,3 +394,10 @@ map <F4> :exe ":Ack --type=cpp " . expand("<cword>") . " " . g:project_root<CR>
 let g:vimwiki_folding=1
 let g:vimwiki_fold_lists=1
 let g:vimwiki_hl_headers=1
+
+let g:tagbar_type_wiki= {
+            \ 'ctagstype' : 'wiki',
+            \ 'kinds' : [
+            \ 'h:headers:1'
+            \]
+            \}

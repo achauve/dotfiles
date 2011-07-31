@@ -19,7 +19,9 @@ if [ -f /usr/bin/netcfg ]; then
 else
     netcfg_prompt=''
 fi
-PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] [$(date +"%d/%m %H:%M")]'${batt_prompt}${netcfg_prompt}' \$ '
+# PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] [$(date +"%d/%m %H:%M")]'${batt_prompt}${netcfg_prompt}' \$ '
+
+PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] [$(date +"%d/%m %H:%M")]'${netcfg_prompt}' \$ '
 
 # ls aliases
 alias ls='ls --color=auto'

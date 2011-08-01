@@ -330,6 +330,8 @@ noremap <silent> <C-F7> <C-w>:A<CR>
 
 noremap <leader>gs :Gstatus<CR>
 noremap <leader>gl :Glog<CR>
+noremap <leader>gv :Gitv --all<CR>
+noremap <leader>ge :Extradite<CR>
 
 " Reformat current paragraph
 noremap <leader>gq gqap

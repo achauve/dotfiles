@@ -1,6 +1,13 @@
 # Check for an interactive session
 [ -z "$PS1" ] && return
 
+
+# history parameters
+HISTIGNORE="cd:ls:ll:lla"
+HISTSIZE=10000
+HISTFILESIZE=$HISTSIZE
+
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -57,6 +64,8 @@ alias iccsetup='source /opt/intel/bin/compilervars.sh intel64'
 alias suspend='sudo pm-suspend'
 
 alias make_tags='ctags -R --c++-kinds=+cdefgmnstuv --fields=+iaS --extra=+q --exclude=build* -f'
+
+alias todo='vim ~/vimwiki/ToDo.wiki'
 
 
 export GREP_OPTIONS='--color=auto -I -n --exclude-dir=".svn" --exclude-dir=".hg"'

@@ -106,6 +106,7 @@ set ffs=unix,dos,mac "Default file types
 
 set backupdir=~/tmp/vim/backup// " backups
 set directory=~/tmp/vim/swap//   " swap files
+set undodir=~/tmp/vim/undo//     " undo files
 set backup                        " enable backups
 
 " }}}

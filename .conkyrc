@@ -1,8 +1,9 @@
-alignment bottom_middle
+alignment bottom_right
 background yes
+double_buffer yes
 border_width 1
 cpu_avg_samples 2
-default_color 222222
+default_color 666666
 default_outline_color 222222
 draw_borders no
 draw_graph_borders yes
@@ -12,8 +13,8 @@ use_xft yes
 xftfont Sans Mono:size=8
 gap_x 5
 gap_y 0
-minimum_size 1900 6
-maximum_width 1900
+#minimum_size 1900 6
+#maximum_width 1900
 net_avg_samples 2
 no_buffers yes
 out_to_console no
@@ -31,11 +32,13 @@ show_graph_scale no
 show_graph_range no
 format_human_readable yes
 
-color1 666666
-color2 888888
-color3 444444
-
+color1 ff6b6b
+color2 1793d1
+color3 81ae51
+color4 435e87
+color5 C0C0C0
 
 TEXT
-${alignr}${color1}eth0 [${color3}${addr eth0}${color}]: ${color1}Up:${color} ${upspeed eth0} ${color1} - Down:${color} ${downspeed eth0}     \
-${color1}CPU: ${color} ${cpu}% ${cpubar cpu0 5,50} ${color2}CPU1: ${cpubar cpu1 5,50} CPU2: ${cpubar cpu2 5,50} CPU3: ${cpubar cpu3 5,50} CPU4: ${cpubar cpu4 5,50} MEM: ${mem}  ${membar 5,50}${color}| \
+${color1}CPU: ${cpu}% ${cpubar cpu0 5,50} ${color3} MEM: ${mem}  ${membar 5,50} ${color5} DISK ${diskiograph sda 12,50}     \
+${color4}CPU1: ${cpubar cpu1 5,50} CPU2: ${cpubar cpu2 5,50} CPU3: ${cpubar cpu3 5,50} CPU4: ${cpubar cpu4 5,50} ${color}\
+    ${color5}eth0 [${color}${addr eth0}${color5}]: Up: ${upspeed eth0} - Down: ${downspeed eth0}     \

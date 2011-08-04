@@ -304,9 +304,6 @@ map <leader>to :TagbarOpen<CR>
 
 map <leader>z :bd<CR>
 map <leader>o <C-w><C-w>
-noremap <ESC>o <C-w>w
-imap <M-o> <ESC><C-w>w
-set <M-o>=o
 
 noremap <leader>a <ESC> :on<CR> :AV<CR> <C-w>r
 

@@ -1,4 +1,4 @@
-alignment bottom_right
+alignment top_right
 background yes
 double_buffer yes
 border_width 1
@@ -12,7 +12,7 @@ draw_shades no
 use_xft yes
 xftfont Sans Mono:size=8
 gap_x 5
-gap_y 0
+gap_y 5
 #minimum_size 1900 6
 #maximum_width 1900
 net_avg_samples 2
@@ -39,6 +39,7 @@ color4 435e87
 color5 C0C0C0
 
 TEXT
-${color1}CPU: ${cpu}% ${cpubar cpu0 5,50} ${color3} MEM: ${mem}  ${membar 5,50} ${color5} DISK ${diskiograph sda 12,50}     \
+${color2}${time %H:%M} ${color5} ${time %a %d %b %Y}   \
+${color1}CPU: ${cpu}% ${cpugraph cpu0 12,50} ${color3} MEM: ${mem}  ${memgraph 12,50} ${color5} \
+DISK ${diskiograph sda 12,50}     \
 ${color4}CPU1: ${cpubar cpu1 5,50} CPU2: ${cpubar cpu2 5,50} CPU3: ${cpubar cpu3 5,50} CPU4: ${cpubar cpu4 5,50} ${color}\
-    ${color5}eth0 [${color}${addr eth0}${color5}]: Up: ${upspeed eth0} - Down: ${downspeed eth0}     \

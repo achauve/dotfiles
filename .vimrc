@@ -78,9 +78,8 @@ set mat=50 "How many tenths of a second to blink
 
 
 " No sound on errors
-set noerrorbells
-set novisualbell
-set visualbell t_vb=
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
 
 syntax enable "Enable syntax hl
 
@@ -401,3 +400,5 @@ let g:tagbar_type_wiki= {
             \ 'h:headers:1'
             \]
             \}
+
+set guioptions="acgv"

@@ -71,3 +71,6 @@
 [submodule ".vim/bundle/fsharp"]
 	path = .vim/bundle/fsharp
 	url = git://github.com/kongo2002/fsharp-vim.git
+[submodule ".emacs.d/bundle/vimpulse"]
+	path = .emacs.d/bundle/vimpulse
+	url = git://gitorious.org/vimpulse/vimpulse.git

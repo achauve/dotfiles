@@ -54,6 +54,11 @@
 (setq org-log-done t)
 
 
+;;;;;; vimpulse
+(add-to-list 'load-path "~/.emacs.d/bundle/vimpulse/")
+(require 'vimpulse)
+
+
 
 ;;;;;;;;;;;;;;;;;
 ;;; ReST mode

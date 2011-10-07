@@ -116,6 +116,7 @@ set undoreload=10000
 
 set smarttab
 set tabstop=4
+set softtabstop=4
 set shiftwidth=4
 set expandtab
 set list listchars=tab:\ \ ,trail:·
@@ -130,14 +131,14 @@ set colorcolumn=85
 
 
 " useful to learn !!
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+" nnoremap <up> <nop>
+" nnoremap <down> <nop>
+" nnoremap <left> <nop>
+" nnoremap <right> <nop>
+" inoremap <up> <nop>
+" inoremap <down> <nop>
+" inoremap <left> <nop>
+" inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
@@ -227,12 +228,12 @@ endfunction
 "Remap VIM 0
 map 0 ^
 
-" Bubble single lines
-nmap <up> [e
-nmap <down> ]e
-" Bubble multiple lines
-vmap <up> [egv
-vmap <down> ]egv
+" " Bubble single lines
+" nmap <up> [e
+" nmap <down> ]e
+" " Bubble multiple lines
+" vmap <up> [egv
+" vmap <down> ]egv
 
 " Visually select the text that was last edited/pasted
 nmap gV `[v`]
@@ -287,7 +288,7 @@ map <leader>tt :ConqueTerm bash<CR>
 
 function! RefreshProjectTags()
     if exists("g:project_root")
-        exe "!echo 'using project_root' && /usr/bin/ctags -R --c++-kinds=+cdefgmnstuv --fields=+iaS --extra=+q --exclude=build* -f ". g:project_root . "tags ". g:project_root
+        exe "!echo 'using project_root' && /usr/bin/ctags -R --c++-kinds=+cdefgmnstuv --fields=+iaS --extra=+q --exclude=build* -f ". g:project_root . "/tags ". g:project_root
     else
         exe "!echo 'using current working dir' && /usr/bin/ctags -R --c++-kinds=+cdefgmnstuv --fields=+iaS --extra=+q --exclude=build*"
     endif
@@ -362,10 +363,10 @@ endif
 let g:clang_complete_auto=0
 " " let g:clang_library_path='/usr/local/lib/'
 let g:clang_use_library=1
-" let g:clang_complete_copen=1
-" let g:clang_periodic_quickfix=1
-" let g:clang_snippets=1
-" let g:clang_debug=1
+let g:clang_complete_copen=1
+"let g:clang_periodic_quickfix=1
+let g:clang_snippets=1
+"let g:clang_debug=1
 
 "let g:SuperTabLongestEnhanced=1
 let g:SuperTabDefaultCompletionType = "context"
@@ -379,11 +380,6 @@ map <F7> :checktime<CR>
 noremap <leader>do :set syntax=cpp.doxygen<CR>
 noremap <leader>dn :set syntax=cpp<CR>
 
-map <F10> :set paste<CR>
-map <F11> :set nopaste<CR>
-imap <F10> <C-O>:set paste<CR>
-imap <F11> <nop>
-set pastetoggle=<F11>
 
 
 map <F4> :exe ":Ack --type=cpp " . expand("<cword>") . " " . g:project_root<CR>

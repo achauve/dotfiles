@@ -35,6 +35,7 @@ alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -A'
 alias lla='ls -lA'
+alias llah='ls -lAh'
 #alias l='ls -CF'
 
 # debian/ubuntu apt-get aliases
@@ -51,8 +52,8 @@ alias cmake-release='cmake -DCMAKE_BUILD_TYPE:STRING=Release'
 alias ccmake-release='ccmake -DCMAKE_BUILD_TYPE:STRING=Release'
 alias cmake-debug='cmake -DCMAKE_BUILD_TYPE:STRING=Debug'
 alias ccmake-debug='ccmake -DCMAKE_BUILD_TYPE:STRING=Debug'
-alias cmake-clang-debug='CC=clang CXX=clang++ cmake -DCMAKE_CXX_FLAGS:STRING="-g"'
-alias cmake-clang-relase='CC=clang CXX=clang++ cmake -DCMAKE_CXX_FLAGS:STRING="" -DCMAKE_BUILD_TYPE:STRING=Release'
+alias cmake-clang-debug='CC=clang CXX=clang++ cmake -DCMAKE_BUILD_TYPE:STRING=Debug'
+alias cmake-clang-relase='CC=clang CXX=clang++ cmake -DCMAKE_BUILD_TYPE:STRING=Release'
 
 alias hggit='hg book -d hg && hg up && hg book hg && hg push -r hg git'
 
@@ -67,10 +68,10 @@ alias make_tags='ctags -R --c++-kinds=+cdefgmnstuv --fields=+iaS --extra=+q --ex
 
 alias todo='vim ~/vimwiki/ToDo.wiki'
 
+PATH=~/local/bin:$PATH
 
 export GREP_OPTIONS='--color=auto -I -n --exclude-dir=".svn" --exclude-dir=".hg"'
 
-PATH=~/local/bin:~/local/src/dmd2/linux/bin64:${PATH}
 
 export PYTHONPATH=~/local/lib/python
 

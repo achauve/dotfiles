@@ -16,9 +16,6 @@
 [submodule ".vim/bundle/tcomment"]
 	path = .vim/bundle/tcomment
 	url = http://github.com/vim-scripts/tComment.git
-[submodule ".vim/bundle/conque"]
-	path = .vim/bundle/conque
-	url = http://github.com/vim-scripts/Conque-Shell.git
 [submodule ".vim/bundle/ack"]
 	path = .vim/bundle/ack
 	url = http://github.com/mileszs/ack.vim.git
@@ -74,3 +71,6 @@
 [submodule ".emacs.d/bundle/vimpulse"]
 	path = .emacs.d/bundle/vimpulse
 	url = git://gitorious.org/vimpulse/vimpulse.git
+[submodule ".vim/bundle/vim-literunner"]
+	path = .vim/bundle/vim-literunner
+	url = https://github.com/tomesoft/vim-literunner.git

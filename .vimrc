@@ -404,3 +404,13 @@ let g:ConqueTerm_SendFileKey = '<F10>'
 let g:ConqueTerm_SendVisKey = '<F9>'
 let g:ConqueTerm_ToggleKey = '<F8>'
 
+let g:liteRunner_ConqueTerm_command='ConqueTermVSplit'
+
+" Python {{{
+
+augroup ft_python
+    au!
+    noremap <silent> <leader><F8> :wa<CR> :LRRunScript<CR>
+augroup END
+
+" }}}

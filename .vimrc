@@ -410,6 +410,12 @@ let g:liteRunner_ConqueTerm_command='ConqueTermVSplit'
 
 augroup ft_python
     au!
+
+    " au Filetype python noremap  <buffer> <localleader>rr :RopeRename<CR>
+    " au Filetype python vnoremap <buffer> <localleader>rm :RopeExtractMethod<CR>
+    " au Filetype python noremap  <buffer> <localleader>ri :RopeOrganizeImports<CR>
+
+    au FileType python setlocal omnifunc=pythoncomplete#Complete
     noremap <silent> <leader><F8> :wa<CR> :LRRunScript<CR>
 augroup END
 

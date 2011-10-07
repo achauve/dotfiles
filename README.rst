@@ -37,6 +37,12 @@ In a terminal::
   git submodule init
   git submodule update
 
+For ropevim to work, you need to install rope (not included here), and you need
+to install ropevim.py manually::
+
+  cd .vim/bundle/ropevim
+  python setup.py install --home=~/local # for example
+
 
 To actually use these files as your config files, the easiest way is to symlink
 them::
@@ -46,4 +52,16 @@ them::
   ln -s dotfiles/.vimrc
 
   # ... keep doing that for all files you are interested in
+
+
+Note: to update the plugins to their last revisions published on github::
+
+  git submodule foreach git pull origin master
+
+
+Links
+=====
+
+A very nice source of inspiration: https://bitbucket.org/sjl/dotfiles
+(thanks to Steve Losh)
 

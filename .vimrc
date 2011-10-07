@@ -398,3 +398,9 @@ let g:tagbar_type_wiki= {
             \}
 
 set guioptions="acgv"
+
+let g:ConqueTerm_ExecFileKey = '<F11>'
+let g:ConqueTerm_SendFileKey = '<F10>'
+let g:ConqueTerm_SendVisKey = '<F9>'
+let g:ConqueTerm_ToggleKey = '<F8>'
+

@@ -40,6 +40,7 @@ color5 C0C0C0
 
 TEXT
 ${color2}${time %H:%M} ${color5} ${time %a %d %b %Y}   \
+BAT: ${battery_percent BAT1}%  ${battery_bar 5,50 BAT1}   \
 ${color1}CPU: ${cpu}% ${cpugraph cpu0 12,50} ${color3} MEM: ${mem}  ${memgraph 12,50} ${color5} \
 DISK ${diskiograph sda 12,50}     \
-${color4}CPU1: ${cpubar cpu1 5,50} CPU2: ${cpubar cpu2 5,50} CPU3: ${cpubar cpu3 5,50} CPU4: ${cpubar cpu4 5,50} ${color}\
+${color4}${cpu cpu1}% ${cpu cpu2}% ${cpu cpu3}% ${cpu cpu4}% ${color}\

@@ -312,7 +312,6 @@ map <leader><F2> :on<CR>
 
 noremap <silent> <leader><F9> :on<CR> :copen<CR><ESC> <C-w>t<C-w>H <C-w>w
 
-noremap <silent> <leader><F8> :wa<CR> :Make<CR>
 
 imap <silent> <leader><F9> <ESC><leader><F9>
 imap <silent> <leader><F8> <ESC><leader><F8>
@@ -348,6 +347,8 @@ set completeopt=menu,longest,preview
 
 
 au BufRead,BufNewFile *.txx set filetype=cpp
+au BufRead,BufNewFile *.h.meta set filetype=cpp
+au BufRead,BufNewFile *.cpp.meta set filetype=cpp
 
 
 " Set an orange cursor in insert mode, and a red cursor otherwise.
@@ -411,12 +412,32 @@ let g:liteRunner_ConqueTerm_command='ConqueTermVSplit'
 augroup ft_python
     au!
 
+    au Filetype python noremap  <buffer> <leader>rg :RopeGotoDefinition<CR>
+    au Filetype python noremap  <buffer> <leader>rd :RopeShowDoc<CR>
     " au Filetype python noremap  <buffer> <localleader>rr :RopeRename<CR>
     " au Filetype python vnoremap <buffer> <localleader>rm :RopeExtractMethod<CR>
     " au Filetype python noremap  <buffer> <localleader>ri :RopeOrganizeImports<CR>
 
     au FileType python setlocal omnifunc=pythoncomplete#Complete
-    noremap <silent> <leader><F8> :wa<CR> :LRRunScript<CR>
+    au FileType python noremap <silent> <leader><F8> :wa<CR> :LRRunScript<CR>
 augroup END
+
+" }}}
+
+
+" C++ {{{
+
+augroup ft_cpp
+    au!
+    au Filetype cpp noremap <silent> <leader><F8> :wa<CR> :Make<CR>
+
+augroup END
+
+" }}}
+
+
+" GUI {{{
+
+set clipboard=unnamed
 
 " }}}

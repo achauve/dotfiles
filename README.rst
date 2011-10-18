@@ -43,6 +43,11 @@ to install ropevim.py manually::
   cd .vim/bundle/ropevim
   python setup.py install --home=~/local # for example
 
+For vimclojure, you need to compile the nailgun client::
+
+  cd .vim/bundle/vimclojure-nailgun-client
+  make
+
 
 To actually use these files as your config files, the easiest way is to symlink
 them::

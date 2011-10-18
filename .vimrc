@@ -407,6 +407,7 @@ let g:ConqueTerm_SendVisKey = '<F9>'
 let g:ConqueTerm_ToggleKey = '<F8>'
 
 let g:liteRunner_ConqueTerm_command='ConqueTermVSplit'
+let g:liteRunner_windowheight_max=1000
 
 " Python {{{
 
@@ -440,5 +441,18 @@ augroup END
 " GUI {{{
 
 set clipboard=unnamed
+
+" }}}
+
+
+" clojure {{{
+
+let vimclojure#FuzzyIndent=1
+let vimclojure#HighlightBuiltins=1
+let vimclojure#HighlightContrib=1
+let vimclojure#DynamicHighlighting=1
+let vimclojure#ParenRainbow=1
+let vimclojure#WantNailgun = 1
+let vimclojure#NailgunClient = $HOME . "/.vim/bundle/vimclojure-nailgun-client/ng"
 
 " }}}

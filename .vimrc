@@ -146,7 +146,6 @@ au FocusLost * :wa
 
 
 inoremap jk <ESC>
-vnoremap jk <ESC>
 
 
 " Map space to / (search) and c-space to ? (backgwards search)

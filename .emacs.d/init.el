@@ -22,6 +22,7 @@
 
 (setq auto-mode-alist (cons '("\\.h$" . c++-mode) auto-mode-alist))
 
+(tool-bar-mode 0)
 
 
 ;;;;;;;;;;;;;;Grep
@@ -53,11 +54,25 @@
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
 
+;;;;;;;;;;;;;;;;;;;;;; bundles
 
-;;;;;; vimpulse
-(add-to-list 'load-path "~/.emacs.d/bundle/vimpulse/")
-(require 'vimpulse)
+;;;;;; evil
+(add-to-list 'load-path "~/.emacs.d/bundle/evil/")
+(require 'evil)
+(evil-mode 1)
 
+;;;;;; clojure-mode
+(add-to-list 'load-path "~/.emacs.d/bundle/clojure-mode/")
+(require 'clojure-mode)
+
+;;;;;; paredit
+(add-to-list 'load-path "~/.emacs.d/bundle/paredit/")
+(require 'paredit)
+
+(defun turn-on-paredit () (paredit-mode 1))
+(add-hook 'clojure-mode-hook 'turn-on-paredit)
+
+;;;;;;;;;;;;;;;;;;;;;; end of bundles
 
 
 ;;;;;;;;;;;;;;;;;

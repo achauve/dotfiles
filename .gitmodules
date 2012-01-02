@@ -74,3 +74,12 @@
 [submodule ".vim/bundle/vim-literunner"]
 	path = .vim/bundle/vim-literunner
 	url = https://github.com/tomesoft/vim-literunner.git
+[submodule ".emacs.d/bundle/clojure-mode"]
+	path = .emacs.d/bundle/clojure-mode
+	url = https://github.com/technomancy/clojure-mode.git
+[submodule ".emacs.d/bundle/paredit"]
+	path = .emacs.d/bundle/paredit
+	url = https://github.com/emacsmirror/paredit.git
+[submodule ".emacs.d/bundle/evil"]
+	path = .emacs.d/bundle/evil
+	url = git://gitorious.org/evil/evil.git

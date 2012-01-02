@@ -72,6 +72,15 @@
 (defun turn-on-paredit () (paredit-mode 1))
 (add-hook 'clojure-mode-hook 'turn-on-paredit)
 
+;;;;;; fsharp-mode
+(add-to-list 'load-path "~/.emacs.d/bundle/fsharp/")
+(setq auto-mode-alist (cons '("\\.fs[iylx]?$" . fsharp-mode) auto-mode-alist))
+(autoload 'fsharp-mode "fsharp" "Major mode for editing F# code." t)
+(autoload 'run-fsharp "inf-fsharp" "Run an inferior F# process." t)
+(setq inferior-fsharp-program "fsharpi --readline-")
+(setq fsharp-compiler "fsharpc")
+
+
 ;;;;;;;;;;;;;;;;;;;;;; end of bundles
 
 

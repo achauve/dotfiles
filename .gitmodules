@@ -83,3 +83,6 @@
 [submodule ".emacs.d/bundle/evil"]
 	path = .emacs.d/bundle/evil
 	url = git://gitorious.org/evil/evil.git
+[submodule ".emacs.d/bundle/auto-complete"]
+	path = .emacs.d/bundle/auto-complete
+	url = https://github.com/m2ym/auto-complete.git

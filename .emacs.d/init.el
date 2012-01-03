@@ -61,6 +61,33 @@
 (require 'evil)
 (evil-mode 1)
 
+;; evil config
+
+
+; "jk" is a replacement for ESC
+(define-key evil-insert-state-map "j" #'cofi/maybe-exit)
+ 
+(evil-define-command cofi/maybe-exit ()
+  :repeat change
+  (interactive)
+  (let ((modified (buffer-modified-p)))
+    (insert "j")
+    (let ((evt (read-event (format "Insert %c to exit insert state" ?k)
+               nil 0.5)))
+      (cond
+       ((null evt) (message ""))
+       ((and (integerp evt) (char-equal evt ?k))
+    (delete-char -1)
+    (set-buffer-modified-p modified)
+    (push 'escape unread-command-events))
+       (t (setq unread-command-events (append unread-command-events
+                          (list evt))))))))
+
+; other shortcuts
+(define-key evil-normal-state-map [f5] 'save-buffer) ; save
+(define-key evil-insert-state-map [f5] 'save-buffer) ; save
+
+
 ;;;;;; clojure-mode
 (add-to-list 'load-path "~/.emacs.d/bundle/clojure-mode/")
 (require 'clojure-mode)
@@ -79,6 +106,12 @@
 (autoload 'run-fsharp "inf-fsharp" "Run an inferior F# process." t)
 (setq inferior-fsharp-program "fsharpi --readline-")
 (setq fsharp-compiler "fsharpc")
+
+;;;;;; auto-complete
+(add-to-list 'load-path "~/.emacs.d/bundle/auto-complete/")
+(setq ac-dictionary-directories '("~/.emacs.d/bundle/auto-complete/dict"))
+(require 'auto-complete-config)
+(ac-config-default)
 
 
 ;;;;;;;;;;;;;;;;;;;;;; end of bundles

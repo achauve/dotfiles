@@ -86,3 +86,12 @@
 [submodule ".emacs.d/bundle/auto-complete"]
 	path = .emacs.d/bundle/auto-complete
 	url = https://github.com/m2ym/auto-complete.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule ".emacs.d/bundle/haskell-mode"]
+	path = .emacs.d/bundle/haskell-mode
+	url = https://github.com/haskell/haskell-mode.git
+[submodule ".vim/bundle/haskell"]
+	path = .vim/bundle/haskell
+	url = https://github.com/wlangstroth/vim-haskell.git

@@ -95,3 +95,12 @@
 [submodule ".vim/bundle/haskell"]
 	path = .vim/bundle/haskell
 	url = https://github.com/wlangstroth/vim-haskell.git
+[submodule ".vim/bundle/solarized"]
+	path = .vim/bundle/solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule ".emacs.d/bundle/solarized"]
+	path = .emacs.d/bundle/solarized
+	url = https://github.com/sellout/emacs-color-theme-solarized.git
+[submodule ".emacs.d/bundle/python"]
+	path = .emacs.d/bundle/python
+	url = https://github.com/fgallina/python.el.git

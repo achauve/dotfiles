@@ -79,6 +79,7 @@ export BROWSER=firefox
 export EDITOR=vim
 alias mq='hg -R `hg root`/.hg/patches'
 
+export CLOJURESCRIPT_HOME=$HOME/local/src/clojurescript/clojurescript
 
 function termfb {
     export TERM=fbterm
@@ -111,3 +112,5 @@ if [ -f ~/.local_bashrc ]; then
     source ~/.local_bashrc
 fi
 
+# alias gcc='LC_ALL=C gcc'
+# alias g++='LC_ALL=C g++'

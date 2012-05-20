@@ -89,8 +89,6 @@ set shell=/bin/bash
 " Highlight current line
 "set cursorline
 
-set background=dark
-colorscheme molokai
 
 set encoding=utf8
 try
@@ -453,5 +451,9 @@ let vimclojure#DynamicHighlighting=1
 let vimclojure#ParenRainbow=1
 let vimclojure#WantNailgun = 1
 let vimclojure#NailgunClient = $HOME . "/.vim/bundle/vimclojure-nailgun-client/ng"
+au BufRead,BufNewFile *.cljs set filetype=clojure
 
 " }}}
+
+set background=dark
+colorscheme solarized

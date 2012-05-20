@@ -24,7 +24,7 @@ For vim you need:
 - ctags
 - these two directories: ~/tmp/vim/swap and ~/tmp/vim/backup (you can also
   disable backup and swap files in .vimrc)
-
+- emacs >= 24 (ppa:cassou/emacs and http://emacs.naquadah.org)
 
 Install
 =======
@@ -36,6 +36,9 @@ In a terminal::
   # clone all the vim plugins as git submodules
   git submodule init
   git submodule update
+
+  chsh -s /bin/zsh
+
 
 For ropevim to work, you need to install rope (not included here), and you need
 to install ropevim.py manually::

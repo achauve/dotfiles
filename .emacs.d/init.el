@@ -25,6 +25,10 @@
 (tool-bar-mode 0)
 
 
+;; color theme solarized
+(add-to-list 'custom-theme-load-path "~/.emacs.d/bundle/solarized/")
+(load-theme 'solarized-dark t)
+
 ;;;;;;;;;;;;;;Grep
 (defun hg-grep (s)
   (interactive "sSearch project for: ")
@@ -61,12 +65,25 @@
 (require 'evil)
 (evil-mode 1)
 
+(global-set-key (kbd "RET") 'newline-and-indent)
+
+;;; esc quits
+(define-key evil-normal-state-map [escape] 'keyboard-quit)
+(define-key evil-visual-state-map [escape] 'keyboard-quit)
+(define-key minibuffer-local-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-completion-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-must-match-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
+
+(evil-set-initial-state 'dired 'emacs)
+
 ;; evil config
 
 
 ; "jk" is a replacement for ESC
 (define-key evil-insert-state-map "j" #'cofi/maybe-exit)
- 
+
 (evil-define-command cofi/maybe-exit ()
   :repeat change
   (interactive)
@@ -112,6 +129,23 @@
 (setq ac-dictionary-directories '("~/.emacs.d/bundle/auto-complete/dict"))
 (require 'auto-complete-config)
 (ac-config-default)
+
+;;;;;;; python-mode
+(add-to-list 'load-path "~/.emacs.d/bundle/python/")
+(require 'python)
+
+;;(require 'ipython)
+
+
+;;;;;;;;; haskell-mode
+;(add-to-list 'load-path "~/.emacs.d/bundle/haskell-mode")
+(load "~/.emacs.d/bundle/haskell-mode/haskell-site-file.el")
+(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
+;(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+(add-to-list 'load-path "~/.emacs.d/bundle/ghc-mod/")
+(autoload 'ghc-init "ghc" nil t)
+(add-hook 'haskell-mode-hook (lambda () (ghc-init) (flymake-mode)))
 
 
 ;;;;;;;;;;;;;;;;;;;;;; end of bundles

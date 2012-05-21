@@ -104,3 +104,6 @@
 [submodule ".emacs.d/bundle/python"]
 	path = .emacs.d/bundle/python
 	url = https://github.com/fgallina/python.el.git
+[submodule ".emacs.d/bundle/helm"]
+	path = .emacs.d/bundle/helm
+	url = https://github.com/emacs-helm/helm.git

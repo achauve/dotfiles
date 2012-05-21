@@ -136,6 +136,10 @@
 
 ;;(require 'ipython)
 
+;;;;;;; helm
+(add-to-list 'load-path "~/.emacs.d/bundle/helm/")
+(require 'helm-config)
+
 
 ;;;;;;;;; haskell-mode
 ;(add-to-list 'load-path "~/.emacs.d/bundle/haskell-mode")

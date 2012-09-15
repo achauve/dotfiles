@@ -1,0 +1,18 @@
+{
+	"caret_style": "wide",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+	],
+	"line_numbers": true,
+	"rulers":
+	[
+		80
+	],
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": false
+}

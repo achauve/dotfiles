@@ -1,0 +1,19 @@
+{
+	"auto_upgrade_last_run": 1347606085,
+	"installed_packages":
+	[
+		"Alignment",
+		"CMake",
+		"Git",
+		"INI",
+		"IPython Integration",
+		"JsFormat",
+		"Nodejs",
+		"Package Control",
+		"SideBarEnhancements",
+		"SideBarGit",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeREPL"
+	]
+}

@@ -33,9 +33,10 @@ ZSH_THEME="bira"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+unsetopt correct_all
 
 # Customize to your needs...
-set correct_all
+#set correct_all
 
 PATH=~/local/bin:~/.cabal/bin:$PATH
 

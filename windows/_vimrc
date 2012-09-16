@@ -1,0 +1,36 @@
+
+set nocompatible
+
+syntax on
+
+set ttyfast
+set lazyredraw
+
+set ignorecase
+
+nnoremap j gj
+nnoremap k gk
+
+" Format the statusline
+set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)
+
+
+let mapleader = ","
+let g:mapleader = ","
+
+
+"clear search
+nnoremap <leader><space> :noh<cr>
+
+set autochdir
+
+
+set hlsearch "Highlight search things
+
+set background=dark
+colorscheme solarized
+
+set guioptions="acgv"
+set guifont=DejaVu\ Sans\ Mono:h10
+
+let g:fe_es_exe = 'es.exe'

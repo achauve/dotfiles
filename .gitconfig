@@ -1,8 +1,9 @@
-[user]
+﻿[user]
     name = Adrien Chauve
     email = adrien.chauve@gmail.com
 [core]
     editor = vim
+    autocrlf = false
 [rerere]
     enabled = true
 [alias]
@@ -17,9 +18,16 @@
     all10 = log --graph --pretty=short --decorate --all -n 10
     glog = log --pretty=oneline --topo-order --graph --abbrev-commit --all --decorate -n
     root = !pwd
+    mg = merge --no-ff --edit --log
+    pf = pull --ff-only
 [color]
     ui = true
 [gui]
-	spellingdictionary = none
+    spellingdictionary = none
 [diff]
     ignoreSubmodules = untracked
+    guitool = kdiff3
+[merge]
+    tool = kdiff3
+[push]
+    default = current
